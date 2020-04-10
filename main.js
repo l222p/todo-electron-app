@@ -1,11 +1,11 @@
-const { app, BrowserWindow, Menu } = require('electron')
-const shell = require('electron').shell;
+const { app, BrowserWindow } = require('electron')
 
 function createWindow() {
     // Create the browser window.
+    
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 550,
+        height: 700,
         webPreferences: {
             nodeIntegration: true
         }
@@ -15,21 +15,7 @@ function createWindow() {
     win.loadFile('src/views/index.html')
 
     // Open the DevTools.
-    win.webContents.openDevTools()
-    let menu = Menu.buildFromTemplate([{
-        label: "Menu",
-        submenu: [
-            { label: "Adjust" },
-            { label: "Other", click(){
-                shell.openExternal("https://google.com")
-            } },
-            { label: "Exit", click(){
-                app.quit();
-            }  }
-        ]
-    }]);
-
-    Menu.setApplicationMenu(menu);
+    //win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
