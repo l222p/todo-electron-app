@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../../assets/css/index.css">
+  </head>
+  <body>
+    
+    <div data-reactroot="" class="todo-app">
+      <h1 class="todo-title">Todos</h1>
+      <ul class="todo-list"></ul>
+      
+      <div class="add-todo">
+        <input class="add-todo__input">
+        <button class="add-todo__btn"><i class="fa fa-plus"></i></button>
+      </div>
+      
+      <div class="filters">
+
+        <a class="filter__link" href="#">remove<i class="fa fa-times"></i></a>
+        <a class="filter__link" href="#">add <i class="fa fa-check"></i></a>
+      </div>
+    </div>
+
+    <script src="../components/index.js"></script>
+  </body>
+</html>
