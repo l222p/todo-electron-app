@@ -2,7 +2,7 @@
 
 Todo Electro App.
 
-![Todo App](app.PNG | width=400)
+![Todo App](app.PNG =400x)
 
 ## Installation
 
